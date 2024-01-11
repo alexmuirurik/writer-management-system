@@ -1,0 +1,92 @@
+/* Template Name: Writer Management System 
+
+** Designed by: Alex Muiruri
+
+** Author Description: 
+    Alex Muiruri is a freelance contennt writer and laravel developer who focuses on tech, web design, and development topics. 
+    Talk to him about matters cloud computing, cloud hosting, etc. He can also help you create fully featured CMS systems using Laravel, NodeJS, 
+    Pure PHP, REACT, and MySQL. 
+
+** Author Website: alexmuiruri.com
+
+** Project Description: 
+    Writer Management System is a simplified laravel project designed to help IT/Media companies manage their content development teams. You can use
+    if to file your oversee workers, issue payments, and file taxes. No need to use different SaaS products to acheive the same thing. You can simply
+    integrate all the features you desire in one website and use one price hosting to manage all your workers.  
+*/
+
+
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.select-styled {
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 8px 15px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.select-styled::after{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(223, 207, 207, 0);
+}
+
+.select-options{
+    display: none;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 10px;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+}
+
+.select-options li {
+    margin: 0;
+    padding: 12px 0;
+    border-radius: 10px;
+    text-indent: 15px;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+}
+
+.select-options li:hover{
+    color: gray;
+    background: #f8f9fa;
+}
+
+.select-options li.is-selected{
+    color: gray;
+    background: #f8f9fa;
+}
+
